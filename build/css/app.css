@@ -567,15 +567,18 @@ body.oscuro {
   }
 }
 /* PC */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1240px) {
   body {
     margin: 0;
-    padding-left: 124px;
-    padding-right: 124px;
+    padding-left: 224px;
+    padding-right: 224px;
   }
 
   .home__container {
     height: 100vh;
+  }
+  .nav__container{
+    padding-left: 4rem;
   }
 
   .section {
