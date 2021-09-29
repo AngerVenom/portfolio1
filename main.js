@@ -45,6 +45,16 @@ window.addEventListener('scroll', scrollActive)
 
 
 /*==================== DARK LIGHT THEME ====================*/ 
+// codigo para que sepa las preferencias de modo claro y oscuro de un usuario 
+    const preferences = window.matchMedia('(prefers-color-scheme: dark)');
+    //console.log(preferences);
+
+    if(preferences.matches){
+        document.body.classList.toggle('darkTheme');
+    } else{
+        document.body.classList.remove('darkTheme');
+    }
+
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'oscuro'
 const iconTheme = 'bx-toggle-right'
